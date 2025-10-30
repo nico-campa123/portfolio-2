@@ -12,21 +12,21 @@ const education: Edu[] = [
   { degree: 'Exchange Program', institution: 'Tech Institute', year: '2023' },
 ];
 
-export function Education(): React.ReactElement {
+export function Education({ className }: { className?: string }): React.ReactElement {
   return (
-    <section id="education" className="section-spacing">
+    <section id="education" className={`section-spacing ${className || ''}`}>
       <div className="container-responsive">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-2xl font-semibold mb-8"
+          className="text-2xl font-semibold mb-8 text-center"
         >
           Education
         </motion.h2>
 
-        <ol className="relative border-s border-white/10 ml-4">
+        <ol className="relative border-s border-white/10 ml-4 mx-auto max-w-lg">
           {education.map((e, idx) => (
             <motion.li
               key={e.degree}

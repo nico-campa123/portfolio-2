@@ -12,11 +12,13 @@ export default function App(): React.ReactElement {
     <div>
       <Navbar />
       <main>
-        <Hero />
-        <Projects />
-        <Achievements />
-        <Education />
-        <Skills />
+        <Hero className="bg-section-dark" />
+        <Projects className="bg-section-alt" />
+        <Achievements className="bg-section-dark" />
+        <div className="flex flex-col md:flex-row justify-between">
+          <Education className="md:w-1/2 bg-section-alt" />
+          <Skills className="md:w-1/2 bg-section-alt" />
+        </div>
         <Contact />
       </main>
     </div>

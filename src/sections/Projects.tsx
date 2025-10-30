@@ -5,6 +5,7 @@ type Project = {
   title: string;
   description: string;
   tags: string[];
+  image: string;
 };
 
 const projects: Project[] = [
@@ -12,27 +13,25 @@ const projects: Project[] = [
     title: 'Project Alpha',
     description: 'A concise summary of what this project does and why it’s cool.',
     tags: ['React', 'Tailwind', 'Framer Motion'],
+    image: 'https://via.placeholder.com/400x250/24293e/ffffff?text=Project+Alpha',
   },
   {
     title: 'Data Explorer',
     description: 'Interactive dashboards and charts for exploring interesting datasets.',
     tags: ['TypeScript', 'D3', 'Vite'],
+    image: 'https://via.placeholder.com/400x250/24293e/ffffff?text=Data+Explorer',
   },
   {
     title: 'API Toolkit',
     description: 'A lightweight toolkit for working with APIs and caching.',
     tags: ['Node', 'Express', 'Redis'],
-  },
-  {
-    title: 'ML Playground',
-    description: 'Exploring simple ML concepts with visual demos.',
-    tags: ['Python', 'Flask', 'Pandas'],
+    image: 'https://via.placeholder.com/400x250/24293e/ffffff?text=API+Toolkit',
   },
 ];
 
-export function Projects(): React.ReactElement {
+export function Projects({ className }: { className?: string }): React.ReactElement {
   return (
-    <section id="projects" className="section-spacing">
+    <section id="projects" className={`section-spacing ${className || ''}`}>
       <div className="container-responsive">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
@@ -53,6 +52,7 @@ export function Projects(): React.ReactElement {
               viewport={{ once: true, amount: 0.4 }}
               className="card-surface p-5 hover:translate-y-[-2px] transition-transform"
             >
+              <img src={p.image} alt={p.title} className="rounded-md mb-4" />
               <h3 className="text-lg font-semibold mb-2">{p.title}</h3>
               <p className="text-white/70 text-sm mb-4">{p.description}</p>
               <div className="flex flex-wrap gap-2">

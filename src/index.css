@@ -39,4 +39,12 @@ body {
   @apply backdrop-blur supports-[backdrop-filter]:bg-bg/60;
 }
 
+.bg-section-alt {
+  background-color: #1e293b; /* slate-800 */
+}
+
+.bg-section-dark {
+  background-color: #0f172a; /* slate-900 */
+}
+
 

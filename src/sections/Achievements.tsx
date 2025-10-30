@@ -13,9 +13,9 @@ const entries: Entry[] = [
   { title: 'Open Source Contribution', body: 'Contributed features and docs to a popular library.', year: '2022' },
 ];
 
-export function Achievements(): React.ReactElement {
+export function Achievements({ className }: { className?: string }): React.ReactElement {
   return (
-    <section id="achievements" className="section-spacing">
+    <section id="achievements" className={`section-spacing ${className || ''}`}>
       <div className="container-responsive">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
