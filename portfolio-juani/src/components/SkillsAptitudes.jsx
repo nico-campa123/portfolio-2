@@ -4,11 +4,11 @@ import React from 'react';
 const SkillsAptitudes = () => {
   return (
     <section id="skills-aptitudes">
-      <h2>Skills and Aptitudes</h2>
+      <h2>Experiencia y habilidades</h2>
       <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Aptitude 1</li>
+        <li>Pasantia en xxx  -  2020-2021</li>
+        <li>Curso de etc  -  2021-2022</li>
+        <li>blabla</li>
       </ul>
     </section>
   );

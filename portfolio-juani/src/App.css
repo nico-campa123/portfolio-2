@@ -47,7 +47,7 @@ h1, h2 {
   background-image: url('/src/assets/images/bridge-placeholder.jpg');
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: #e0d0ff; /* Softer light purple text */
   padding: 80px 40px;
   position: relative;
   min-height: 60vh; /* Make hero section taller */
@@ -75,12 +75,12 @@ h1, h2 {
 #hero h1 {
   font-size: 3.5em;
   margin-bottom: 10px;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  text-shadow: 0 0 10px rgba(224, 208, 255, 0.5); /* Softer text glow */
 }
 
 #hero h2 {
   font-size: 2em;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 7px rgba(224, 208, 255, 0.4); /* Softer text glow */
 }
 
 #hero img {
