@@ -173,6 +173,94 @@ h1, h2 {
   box-shadow: 0 0 15px rgba(138, 43, 226, 0.7);
 }
 
+/* Bland Skills Section */
+.bland-skills-background {
+  background-image: url('/src/assets/images/blueprint.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh; /* Make it much bigger */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+  padding: 60px 20px; /* More padding */
+  position: relative;
+}
+
+.bland-skills-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for text readability */
+  z-index: 1;
+}
+
+.bland-skills-background > * {
+  position: relative;
+  z-index: 2;
+}
+
+.bland-skills-background h2 {
+  font-size: 3em; /* Bigger title */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.skill-category {
+  background-color: rgba(42, 8, 69, 0.9); /* Semi-transparent background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(176, 129, 255, 0.4);
+  min-width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(176, 129, 255, 0.7);
+}
+
+.skill-category h3 {
+  color: #c780ff;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.skill-category li {
+  color: #e0b0ff;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skill-category li::before {
+  content: '•';
+  color: #b081ff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
 /* Contact Section */
 #contact {
   text-align: center;

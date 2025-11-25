@@ -3,13 +3,13 @@ import React from 'react';
 
 const SkillsAptitudes = () => {
   return (
-    <section id="skills-aptitudes">
-      <h2>Experiencia y habilidades</h2>
-      <ul>
-        <li>Pasantia en xxx  -  2020-2021</li>
-        <li>Curso de etc  -  2021-2022</li>
-        <li>blabla</li>
-      </ul>
+    <section id="skills-aptitudes" className="skills-background">
+      <h2>Experiencia y habipdades</h2>
+
+        <p>- Pasantia en Constructora Edfan  -  2028/2029</p>
+        <p>- Curso de ingles avanzado</p>
+        <p>- Curso de frances basico</p>
+
     </section>
   );
 };
