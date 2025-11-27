@@ -3,37 +3,35 @@ import React from 'react';
 const BlandSkills = () => {
   return (
     <section id="bland-skills" className="bland-skills-background">
-      <h2>My Skills</h2>
+      <h2>Mis habilidades</h2>
 
       <div className="skills-list">
         <div className="skill-category">
-          <h3>Technical Skills</h3>
+          <h3>Tecnicas</h3>
           <ul>
-            <li>Frontend Development</li>
-            <li>JavaScript/React</li>
-            <li>HTML/CSS</li>
-            <li>Version Control (Git)</li>
-            <li>UI/UX Design</li>
+            <li>Estructural</li>
+            <li>Gestor de obra</li>
+            <li>Hidraulico</li>
+            <li>Administrativo</li>
           </ul>
         </div>
 
         <div className="skill-category">
-          <h3>Soft Skills</h3>
+          <h3>Blandas</h3>
           <ul>
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
-            <li>Communication</li>
-            <li>Project Management</li>
-            <li>Continuous Learning</li>
+            <li>Trabajo en equipo</li>
+            <li>Creativo</li>
+            <li>Liderazgo</li>
+            <li>Innovador</li>
           </ul>
         </div>
 
         <div className="skill-category">
-          <h3>Languages</h3>
+          <h3>Idiomas</h3>
           <ul>
-            <li>Spanish (Native)</li>
-            <li>English (Advanced)</li>
-            <li>French (Basic)</li>
+            <li>Español</li>
+            <li>Ingles</li>
+            <li>Frances</li>
           </ul>
         </div>
       </div>

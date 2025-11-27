@@ -6,7 +6,7 @@ const Hero = () => {
     <section id="hero">
       <h1>Juan Ignacio Hernandez Busquet</h1>
       <h2>Civil Engineering Student</h2>
-      <img src="/src/assets/images/juani.jpg" alt="Juan Ignacio Hernandez Busquet" />
+      <img src="/src/assets/images/juanchi.jpg" alt="Juan Ignacio Hernandez Busquet" />
       
     </section>
   );

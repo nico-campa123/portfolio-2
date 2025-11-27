@@ -15,14 +15,14 @@ const ProjectCard = ({ title, description, githubLink, image }) => {
 const Projects = () => {
   const projects = [
     {
-      title: 'Project One',
-      description: 'A brief description of project one.',
+      title: 'EVA AI',
+      description: 'Maneje la base de datos, implementando con front-end y AI',
       githubLink: 'https://github.com/yourusername/project-one',
       image: '/src/assets/images/placeholder.jpg',
     },
     {
-      title: 'Project Two',
-      description: 'A brief description of project two.',
+      title: 'Estructuras+',
+      description: 'Lider de grupo desarrollo de estrucura.',
       githubLink: 'https://github.com/yourusername/project-two',
       image: '/src/assets/images/placeholder.jpg',
     },
